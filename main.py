@@ -38,26 +38,26 @@ class ChromeSearch(unittest.TestCase):
         driver_chrome.find_element_by_xpath('//*[@id = "wp-megamenu-item-20693"]').click()
         WebDriverWait(driver_chrome, 3)
 
-        #   прокрутка страницы до искомого элемента
-        #   Scroll the page to the desired element
+        #   Прокрутка страницы до искомого элемента.
+        #   Scroll the page to the desired element.
 
         driver_chrome.find_element_by_xpath('//*[@class="btn btn-gradient-hover"]').send_keys(Keys.HOME)
 
-        #   проверка текста (не работает)
+        #   Проверка текста (не работает)
         #   driver_chrome.find_element_by_xpath('//*[@class="elementor-heading-title elementor-size-default"]')
         #   assert 'Protect Your Highest-Risk Executives from Targeted Account Takeover' in driver_chrome.title
         #   print(driver_chrome.title)
         #   if not 'Protect Your Highest-Risk Executives from Targeted Account Takeover' in driver_chrome.title:
         #       raise Exception('Title is wrong')
 
-        #  клик на нужный элемент
+        #  Клик на нужный элемент
         #  Click on the desired item.
 
         driver_chrome.find_element_by_xpath('//*[@class="btn btn-gradient-hover"]').click()
         WebDriverWait(driver_chrome, 10)
 
-        #  скрин ошибки 404
-        #  404 error screen
+        #  Скрин ошибки 404.
+        #  404 error screen.
         driver_chrome.save_screenshot(r"C:\Users\14252\Documents\QA\Test SpyCloud\Error.png")
 
         time.sleep(1)
