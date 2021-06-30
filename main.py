@@ -24,7 +24,7 @@ class ChromeSearch(unittest.TestCase):
         print(driver_chrome.title)
         print(driver_chrome.current_url)
         driver_chrome.find_element_by_xpath('//*[@alt="logo"]')
-        print(driver_chrome.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image
+        print(driver_chrome.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image.
 
         #  Наведение курсора на всплывающее окно. Клик на нужный элемент.
         #  Hover the cursor over a pop-up window. Click on the desired item.
@@ -43,14 +43,14 @@ class ChromeSearch(unittest.TestCase):
 
         driver_chrome.find_element_by_xpath('//*[@class="btn btn-gradient-hover"]').send_keys(Keys.HOME)
 
-        #   Проверка текста (не работает)
+        #   Проверка текста (не работает).
         #   driver_chrome.find_element_by_xpath('//*[@class="elementor-heading-title elementor-size-default"]')
         #   assert 'Protect Your Highest-Risk Executives from Targeted Account Takeover' in driver_chrome.title
         #   print(driver_chrome.title)
         #   if not 'Protect Your Highest-Risk Executives from Targeted Account Takeover' in driver_chrome.title:
         #       raise Exception('Title is wrong')
 
-        #  Клик на нужный элемент
+        #  Клик на нужный элемент.
         #  Click on the desired item.
 
         driver_chrome.find_element_by_xpath('//*[@class="btn btn-gradient-hover"]').click()
@@ -65,7 +65,7 @@ class ChromeSearch(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()  # Close the browser.
 
-# Test in Chrome (1062x722)
+# Test in Chrome (1062x722).
 
     def test_search_chrome_1062x722(self):
         driver_chrome = self.driver
@@ -76,7 +76,7 @@ class ChromeSearch(unittest.TestCase):
         print(driver_chrome.title)
         print(driver_chrome.current_url)
         driver_chrome.find_element_by_xpath('//*[@alt="logo"]')
-        print(driver_chrome.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image
+        print(driver_chrome.find_element(By.TAG_NAME, "img").get_attribute("src"))             # SpyCloud logo image.
         driver_chrome.find_element_by_xpath('//button[@id="responsive-menu-button"]').click()
         driver_chrome.find_element(By.ID, 'responsive-menu-container')
         driver_chrome.find_elements_by_xpath('//*[@class="btn btn-yellow"]')
@@ -88,7 +88,7 @@ class ChromeSearch(unittest.TestCase):
     def tearDownClass(self):
         self.driver.quit()  # Close the browser chrome 1062x722.
 
-# Test in Firefox
+# Test in Firefox.
 
 
 class FirefoxSearch(unittest.TestCase):
@@ -105,7 +105,7 @@ class FirefoxSearch(unittest.TestCase):
         print(driver_Firefox.title)
         print(driver_Firefox.current_url)
         driver_Firefox.find_element_by_xpath('//*[@alt="logo"]')
-        print(driver_Firefox.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image
+        print(driver_Firefox.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image.
 
         time.sleep(1)
 
