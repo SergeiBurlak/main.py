@@ -63,7 +63,7 @@ class ChromeSearch(unittest.TestCase):
         time.sleep(1)
 
     def tearDown(self):
-        self.driver.quit()  # Close the browser.
+        self.driver.quit()      # Close the browser.
 
 # Test in Chrome (1062x722).
 
@@ -86,7 +86,7 @@ class ChromeSearch(unittest.TestCase):
         time.sleep(1)
 
     def tearDownClass(self):
-        self.driver.quit()  # Close the browser chrome 1062x722.
+        self.driver.quit()      # Close the browser chrome 1062x722.
 
 # Test in Firefox.
 
@@ -105,7 +105,7 @@ class FirefoxSearch(unittest.TestCase):
         print(driver_Firefox.title)
         print(driver_Firefox.current_url)
         driver_Firefox.find_element_by_xpath('//*[@alt="logo"]')
-        print(driver_Firefox.find_element(By.TAG_NAME, "img").get_attribute("src"))  # SpyCloud logo image.
+        print(driver_Firefox.find_element(By.TAG_NAME, "img").get_attribute("src"))     # SpyCloud logo image.
 
         time.sleep(1)
 
