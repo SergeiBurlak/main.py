@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-# Test in Chrome
+# Test in Chrome.
 
 class ChromeSearch(unittest.TestCase):
 
