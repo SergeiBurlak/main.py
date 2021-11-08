@@ -44,6 +44,7 @@ class ChromeSearch(unittest.TestCase):
         driver_chrome.find_element_by_xpath('//*[@class="btn btn-gradient-hover"]').send_keys(Keys.HOME)
 
         #   Проверка текста (не работает).
+        #   Всё время не хватает на это время.
         #   driver_chrome.find_element_by_xpath('//*[@class="elementor-heading-title elementor-size-default"]')
         #   assert 'Protect Your Highest-Risk Executives from Targeted Account Takeover' in driver_chrome.title
         #   print(driver_chrome.title)
